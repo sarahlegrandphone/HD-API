@@ -1,143 +1,227 @@
-export default function handler(req, res) {
+// /api/generate-image.js
+
+export default async function handler(req, res) {
+  // Canvas
+  const width = 400;
+  const height = 900;
+
+  // Kleuren & stijl
+  const turquoise = "#63bca1";
+  const rustBrown = "#b46a4c"; // nog niet gebruikt, maar klaar voor later
+  const centerStrokeWidth = 1.5;
+  const gateRadius = 7;
+  const gateNumberFontSize = 9;
+  const channelStrokeWidth = 2;
+
+  // Centers (klassieke HD layout, hoog & smal)
+  const centers = {
+    Crown:   { x: 200, y: 70,  type: "triangleUp" },
+    Mind:    { x: 200, y: 150, type: "triangleDown" },
+    Throat:  { x: 200, y: 240, type: "square" },
+    Self:    { x: 200, y: 350, type: "diamond" },
+    Heart:   { x: 260, y: 350, type: "squareSmall" },
+    Spleen:  { x: 130, y: 350, type: "triangleLeft" },
+    Emotions:{ x: 270, y: 460, type: "triangleRight" },
+    Sacral:  { x: 200, y: 470, type: "square" },
+    Root:    { x: 200, y: 620, type: "square" }
+  };
+
+  // Gates → Centers (uit jouw C# GatesExtensionMethods.GetCenter)
+  const gateToCenter = {
+    1: "Self",
+    2: "Self",
+    3: "Sacral",
+    4: "Mind",
+    5: "Sacral",
+    6: "Emotions",
+    7: "Self",
+    8: "Throat",
+    9: "Sacral",
+    10: "Self",
+    11: "Mind",
+    12: "Throat",
+    13: "Self",
+    14: "Sacral",
+    15: "Self",
+    16: "Throat",
+    17: "Mind",
+    18: "Spleen",
+    19: "Root",
+    20: "Throat",
+    21: "Heart",
+    22: "Emotions",
+    23: "Throat",
+    24: "Mind",
+    25: "Self",
+    26: "Heart",
+    27: "Sacral",
+    28: "Spleen",
+    29: "Sacral",
+    30: "Emotions",
+    31: "Throat",
+    32: "Spleen",
+    33: "Throat",
+    34: "Sacral",
+    35: "Throat",
+    36: "Emotions",
+    37: "Emotions",
+    38: "Root",
+    39: "Root",
+    40: "Heart",
+    41: "Root",
+    42: "Sacral",
+    43: "Mind",
+    44: "Spleen",
+    45: "Throat",
+    46: "Self",
+    47: "Mind",
+    48: "Spleen",
+    49: "Emotions",
+    50: "Spleen",
+    51: "Heart",
+    52: "Root",
+    53: "Root",
+    54: "Root",
+    55: "Emotions",
+    56: "Throat",
+    57: "Spleen",
+    58: "Root",
+    59: "Sacral",
+    60: "Root",
+    61: "Crown",
+    62: "Throat",
+    63: "Crown",
+    64: "Crown"
+  };
+
+  // Channels (uit jouw Channels enum)
+  const channels = [
+    [1, 8],
+    [2, 14],
+    [3, 60],
+    [4, 63],
+    [5, 15],
+    [6, 59],
+    [7, 31],
+    [9, 52],
+    [10, 20],
+    [10, 34],
+    [10, 57],
+    [11, 56],
+    [12, 22],
+    [13, 33],
+    [16, 48],
+    [17, 62],
+    [18, 58],
+    [19, 49],
+    [20, 34],
+    [20, 57],
+    [21, 45],
+    [23, 43],
+    [24, 61],
+    [25, 51],
+    [26, 44],
+    [27, 50],
+    [28, 38],
+    [29, 46],
+    [30, 41],
+    [32, 54],
+    [34, 57],
+    [35, 36],
+    [37, 40],
+    [39, 55],
+    [42, 53],
+    [47, 64]
+  ];
+
+  // Groepeer gates per center
+  const gatesByCenter = {};
+  for (let gate = 1; gate <= 64; gate++) {
+    const centerName = gateToCenter[gate];
+    if (!centerName) continue;
+    if (!gatesByCenter[centerName]) gatesByCenter[centerName] = [];
+    gatesByCenter[centerName].push(gate);
+  }
+
+  // Posities van gates per center (cirkelvormig rond het center)
+  const gatePositions = {}; // gateNumber -> {x, y}
+  const gateRingRadius = 32;
+
+  Object.entries(gatesByCenter).forEach(([centerName, gateList]) => {
+    const center = centers[centerName];
+    if (!center) return;
+    const count = gateList.length;
+    gateList.forEach((gate, index) => {
+      const angle = (Math.PI * 2 * index) / count - Math.PI / 2; // start bovenaan
+      const x = center.x + gateRingRadius * Math.cos(angle);
+      const y = center.y + gateRingRadius * Math.sin(angle);
+      gatePositions[gate] = { x, y };
+    });
+  });
+
+  // Helpers om center‑vormen te tekenen
+  function drawCenterShape(id, center) {
+    const { x, y, type } = center;
+    const size = 60;
+    const half = size / 2;
+    const small = 36;
+    const smallHalf = small / 2;
+
+    switch (type) {
+      case "triangleUp":
+        return `<polygon id="${id}" points="${x},${y - half} ${x - half},${y + half} ${x + half},${y + half}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+      case "triangleDown":
+        return `<polygon id="${id}" points="${x},${y + half} ${x - half},${y - half} ${x + half},${y - half}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+      case "triangleLeft":
+        return `<polygon id="${id}" points="${x - half},${y} ${x + half},${y - half} ${x + half},${y + half}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+      case "triangleRight":
+        return `<polygon id="${id}" points="${x + half},${y} ${x - half},${y - half} ${x - half},${y + half}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+      case "diamond":
+        return `<polygon id="${id}" points="${x},${y - half} ${x - half},${y} ${x},${y + half} ${x + half},${y}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+      case "squareSmall":
+        return `<rect id="${id}" x="${x - smallHalf}" y="${y - smallHalf}" width="${small}" height="${small}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+      case "square":
+      default:
+        return `<rect id="${id}" x="${x - half}" y="${y - half}" width="${size}" height="${size}" fill="none" stroke="${turquoise}" stroke-width="${centerStrokeWidth}" />`;
+    }
+  }
+
+  // SVG centers
+  const centersSvg = Object.entries(centers)
+    .map(([name, center]) => drawCenterShape(name, center))
+    .join("\n");
+
+  // SVG gates (cirkel + turquoise nummer)
+  const gatesSvg = Object.entries(gatePositions)
+    .map(([gateStr, pos]) => {
+      const gate = parseInt(gateStr, 10);
+      return `
+        <g id="gate-${gate}">
+          <circle cx="${pos.x}" cy="${pos.y}" r="${gateRadius}" fill="white" stroke="${turquoise}" stroke-width="1" />
+          <text x="${pos.x}" y="${pos.y + 3}" text-anchor="middle" font-size="${gateNumberFontSize}" fill="${turquoise}" font-family="sans-serif">${gate}</text>
+        </g>
+      `;
+    })
+    .join("\n");
+
+  // SVG channels (lijnen tussen gate‑posities)
+  const channelsSvg = channels
+    .map(([g1, g2], idx) => {
+      const p1 = gatePositions[g1];
+      const p2 = gatePositions[g2];
+      if (!p1 || !p2) return "";
+      return `<line id="channel-${idx}" x1="${p1.x}" y1="${p1.y}" x2="${p2.x}" y2="${p2.y}" stroke="#222" stroke-width="${channelStrokeWidth}" stroke-linecap="round" />`;
+    })
+    .join("\n");
+
   const svg = `
-  <svg width="500" height="900" viewBox="0 0 500 900" xmlns="http://www.w3.org/2000/svg">
-
-    <style>
-      .center {
-        fill: rgba(255,255,255,0.0);
-        stroke: #63bca1;
-        stroke-width: 4;
-      }
-      .channel {
-        stroke: #63bca1;
-        stroke-width: 6;
-        stroke-linecap: round;
-        fill: none;
-        opacity: 0.45;
-      }
-      .gate {
-        fill: #f6f2ec;
-        stroke: #63bca1;
-        stroke-width: 2;
-      }
-      .gate-label {
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        font-size: 10px;
-        fill: #555;
-        text-anchor: middle;
-        dominant-baseline: middle;
-      }
-      .title {
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        font-size: 18px;
-        fill: #444;
-        text-anchor: middle;
-      }
-    </style>
-
-    <text x="250" y="30" class="title">Jouw Human Design Bodygraph</text>
-
-    <!-- ========================= -->
-    <!--         CENTERS           -->
-    <!-- ========================= -->
-
-    <polygon class="center" points="250,60 310,150 190,150" />
-    <polygon class="center" points="250,170 320,260 180,260" />
-    <rect class="center" x="200" y="290" width="100" height="100" rx="14" ry="14" />
-    <polygon class="center" points="250,420 310,480 250,540 190,480" />
-    <polygon class="center" points="260,560 330,580 290,640 220,620" />
-    <rect class="center" x="200" y="660" width="100" height="100" rx="14" ry="14" />
-    <polygon class="center" points="150,520 190,580 150,640" />
-    <polygon class="center" points="350,520 310,580 350,640" />
-    <rect class="center" x="180" y="780" width="140" height="100" rx="14" ry="14" />
-
-    <!-- ========================= -->
-    <!--         KANALEN           -->
-    <!-- ========================= -->
-
-    <line class="channel" x1="235" y1="150" x2="235" y2="170" />
-    <line class="channel" x1="250" y1="150" x2="250" y2="170" />
-    <line class="channel" x1="265" y1="150" x2="265" y2="170" />
-
-    <line class="channel" x1="230" y1="260" x2="230" y2="290" />
-    <line class="channel" x1="250" y1="260" x2="250" y2="290" />
-    <line class="channel" x1="270" y1="260" x2="270" y2="290" />
-
-    <line class="channel" x1="230" y1="390" x2="230" y2="420" />
-    <line class="channel" x1="250" y1="390" x2="250" y2="420" />
-    <line class="channel" x1="270" y1="390" x2="270" y2="420" />
-
-    <line class="channel" x1="240" y1="540" x2="240" y2="660" />
-    <line class="channel" x1="250" y1="540" x2="250" y2="660" />
-    <line class="channel" x1="260" y1="540" x2="260" y2="660" />
-
-    <line class="channel" x1="210" y1="500" x2="180" y2="560" />
-    <line class="channel" x1="290" y1="500" x2="320" y2="560" />
-
-    <line class="channel" x1="270" y1="580" x2="270" y2="390" />
-    <line class="channel" x1="260" y1="560" x2="260" y2="500" />
-    <line class="channel" x1="300" y1="600" x2="330" y2="580" />
-
-    <line class="channel" x1="160" y1="640" x2="200" y2="780" />
-    <line class="channel" x1="170" y1="640" x2="220" y2="780" />
-    <line class="channel" x1="180" y1="640" x2="240" y2="780" />
-
-    <line class="channel" x1="340" y1="640" x2="300" y2="780" />
-    <line class="channel" x1="330" y1="640" x2="280" y2="780" />
-    <line class="channel" x1="320" y1="640" x2="260" y2="780" />
-
-    <line class="channel" x1="230" y1="760" x2="230" y2="780" />
-    <line class="channel" x1="250" y1="760" x2="250" y2="780" />
-    <line class="channel" x1="270" y1="760" x2="270" y2="780" />
-
-    <line class="channel" x1="210" y1="700" x2="180" y2="620" />
-    <line class="channel" x1="290" y1="700" x2="320" y2="620" />
-    <line class="channel" x1="250" y1="660" x2="250" y2="390" />
-
-    <!-- ========================= -->
-    <!--          POORTEN         -->
-    <!-- ========================= -->
-
-    <circle class="gate" cx="235" cy="145" r="9" /><text class="gate-label" x="235" y="145">61</text>
-    <circle class="gate" cx="250" cy="145" r="9" /><text class="gate-label" x="250" y="145">63</text>
-    <circle class="gate" cx="265" cy="145" r="9" /><text class="gate-label" x="265" y="145">64</text>
-
-    <circle class="gate" cx="230" cy="265" r="8" /><text class="gate-label" x="230" y="265">24</text>
-    <circle class="gate" cx="250" cy="265" r="8" /><text class="gate-label" x="250" y="265">4</text>
-    <circle class="gate" cx="270" cy="265" r="8" /><text class="gate-label" x="270" y="265">47</text>
-
-    <circle class="gate" cx="210" cy="290" r="7" /><text class="gate-label" x="210" y="290">56</text>
-    <circle class="gate" cx="230" cy="290" r="7" /><text class="gate-label" x="230" y="290">62</text>
-    <circle class="gate" cx="250" cy="290" r="7" /><text class="gate-label" x="250" y="290">23</text>
-    <circle class="gate" cx="270" cy="290" r="7" /><text class="gate-label" x="270" y="290">31</text>
-    <circle class="gate" cx="290" cy="290" r="7" /><text class="gate-label" x="290" y="290">8</text>
-
-    <circle class="gate" cx="250" cy="415" r="8" /><text class="gate-label" x="250" y="415">1</text>
-    <circle class="gate" cx="250" cy="545" r="8" /><text class="gate-label" x="250" y="545">2</text>
-
-    <circle class="gate" cx="275" cy="575" r="7" /><text class="gate-label" x="275" y="575">21</text>
-    <circle class="gate" cx="305" cy="590" r="7" /><text class="gate-label" x="305" y="590">26</text>
-    <circle class="gate" cx="245" cy="625" r="7" /><text class="gate-label" x="245" y="625">40</text>
-    <circle class="gate" cx="290" cy="610" r="7" /><text class="gate-label" x="290" y="610">51</text>
-
-    <circle class="gate" cx="215" cy="660" r="8" /><text class="gate-label" x="215" y="660">3</text>
-    <circle class="gate" cx="235" cy="660" r="8" /><text class="gate-label" x="235" y="660">5</text>
-    <circle class="gate" cx="255" cy="660" r="8" /><text class="gate-label" x="255" y="660">9</text>
-    <circle class="gate" cx="275" cy="660" r="8" /><text class="gate-label" x="275" y="660">14</text>
-
-    <circle class="gate" cx="165" cy="580" r="7" /><text class="gate-label" x="165" y="580">57</text>
-    <circle class="gate" cx="160" cy="630" r="7" /><text class="gate-label" x="160" y="630">28</text>
-
-    <circle class="gate" cx="335" cy="580" r="7" /><text class="gate-label" x="335" y="580">22</text>
-    <circle class="gate" cx="340" cy="630" r="7" /><text class="gate-label" x="340" y="630">36</text>
-
-    <circle class="gate" cx="200" cy="780" r="8" /><text class="gate-label" x="200" y="780">52</text>
-    <circle class="gate" cx="230" cy="780" r="8" /><text class="gate-label" x="230" y="780">53</text>
-    <circle class="gate" cx="260" cy="780" r="8" /><text class="gate-label" x="260" y="780">60</text>
-    <circle class="gate" cx="290" cy="780" r="8" /><text class="gate-label" x="290" y="780">54</text>
-
-  </svg>
-  `;
+    <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+      <rect x="0" y="0" width="${width}" height="${height}" fill="white" />
+      ${channelsSvg}
+      ${centersSvg}
+      ${gatesSvg}
+    </svg>
+  `.trim();
 
   res.setHeader("Content-Type", "image/svg+xml");
   res.status(200).send(svg);
