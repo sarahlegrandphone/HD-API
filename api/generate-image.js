@@ -2,43 +2,40 @@ export default function handler(req, res) {
   const svg = `
   <svg width="500" height="900" viewBox="0 0 500 900" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- ZACHTE STIJL -->
     <style>
       .center {
         fill: rgba(255,255,255,0.0);
         stroke: #63bca1;
         stroke-width: 4;
-        rx: 18;
-        ry: 18;
       }
     </style>
 
-    <!-- HEAD CENTER -->
-    <polygon class="center" points="250,40 310,120 250,200 190,120" />
+    <!-- HEAD (driehoek naar beneden) -->
+    <polygon class="center" points="250,40 310,140 190,140" />
 
-    <!-- AJNA CENTER -->
-    <polygon class="center" points="250,220 320,300 250,380 180,300" />
+    <!-- AJNA (driehoek naar boven) -->
+    <polygon class="center" points="250,160 320,260 180,260" />
 
-    <!-- THROAT CENTER -->
-    <rect class="center" x="200" y="400" width="100" height="120" />
+    <!-- THROAT (vierkant) -->
+    <rect class="center" x="200" y="290" width="100" height="100" rx="14" ry="14" />
 
-    <!-- G CENTER -->
-    <polygon class="center" points="250,540 320,620 250,700 180,620" />
+    <!-- G CENTER (diamant) -->
+    <polygon class="center" points="250,420 310,480 250,540 190,480" />
 
-    <!-- SACRAL CENTER -->
-    <rect class="center" x="200" y="720" width="100" height="120" />
+    <!-- EGO (parallellogram) -->
+    <polygon class="center" points="260,560 330,580 290,640 220,620" />
 
-    <!-- SPLEEN CENTER (links) -->
-    <polygon class="center" points="120,520 180,580 180,660 120,720" />
+    <!-- SACRAL (vierkant) -->
+    <rect class="center" x="200" y="660" width="100" height="100" rx="14" ry="14" />
 
-    <!-- SOLAR PLEXUS CENTER (rechts) -->
-    <polygon class="center" points="380,520 320,580 320,660 380,720" />
+    <!-- SPLEEN (driehoek links) -->
+    <polygon class="center" points="150,520 190,580 150,640" />
 
-    <!-- EGO CENTER -->
-    <rect class="center" x="200" y="580" width="100" height="80" />
+    <!-- SOLAR PLEXUS (driehoek rechts) -->
+    <polygon class="center" points="350,520 310,580 350,640" />
 
-    <!-- ROOT CENTER -->
-    <rect class="center" x="180" y="860" width="140" height="80" />
+    <!-- ROOT (vierkant) -->
+    <rect class="center" x="180" y="780" width="140" height="100" rx="14" ry="14" />
 
   </svg>
   `;
