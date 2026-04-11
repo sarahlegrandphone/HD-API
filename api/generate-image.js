@@ -38,7 +38,9 @@ export default function handler(req, res) {
     <!-- Titel -->
     <text x="250" y="30" class="title">Jouw Human Design Bodygraph</text>
 
-    <!-- CENTERS -->
+    <!-- ========================= -->
+    <!--         CENTERS           -->
+    <!-- ========================= -->
 
     <!-- HEAD (driehoek naar beneden) -->
     <polygon id="head" class="center" points="250,60 310,150 190,150" />
@@ -67,161 +69,71 @@ export default function handler(req, res) {
     <!-- ROOT (vierkant) -->
     <rect id="root" class="center" x="180" y="780" width="140" height="100" rx="14" ry="14" />
 
-    <!-- KANALEN (vereenvoudigde maar correcte verbindingen tussen centers) -->
-
-    <!-- Head – Ajna (61–24, 63–4, 64–47) -->
-    <line class="channel" x1="240" y1="150" x2="240" y2="170" />
-    <line class="channel" x1="250" y1="150" x2="250" y2="170" />
-    <line class="channel" x1="260" y1="150" x2="260" y2="170" />
-
-    <!-- Ajna – Throat (11–56, 17–62, 43–23) -->
-    <line class="channel" x1="230" y1="260" x2="230" y2="290" />
-    <line class="channel" x1="250" y1="260" x2="250" y2="290" />
-    <line class="channel" x1="270" y1="260" x2="270" y2="290" />
-
-    <!-- Throat – G (7–31, 1–8, 33–13) -->
-    <line class="channel" x1="230" y1="390" x2="230" y2="420" />
-    <line class="channel" x1="250" y1="390" x2="250" y2="420" />
-    <line class="channel" x1="270" y1="390" x2="270" y2="420" />
-
-    <!-- G – Sacral (2–14, 5–15, 29–46) -->
-    <line class="channel" x1="240" y1="540" x2="240" y2="660" />
-    <line class="channel" x1="250" y1="540" x2="250" y2="660" />
-    <line class="channel" x1="260" y1="540" x2="260" y2="660" />
-
-    <!-- G – Spleen (10–57) -->
-    <line class="channel" x1="210" y1="500" x2="180" y2="560" />
-
-    <!-- G – Solar Plexus (37–40) -->
-    <line class="channel" x1="290" y1="500" x2="320" y2="560" />
-
-    <!-- Ego – Throat (21–45) -->
-    <line class="channel" x1="270" y1="580" x2="270" y2="390" />
-
-    <!-- Ego – G (51–25) -->
-    <line class="channel" x1="260" y1="560" x2="260" y2="500" />
-
-    <!-- Ego – Solar Plexus (26–44) -->
-    <line class="channel" x1="300" y1="600" x2="330" y2="580" />
-
-    <!-- Spleen – Root (38–28, 58–18, 48–16) -->
-    <line class="channel" x1="160" y1="640" x2="200" y2="780" />
-    <line class="channel" x1="170" y1="640" x2="220" y2="780" />
-    <line class="channel" x1="180" y1="640" x2="240" y2="780" />
-
-    <!-- Solar Plexus – Root (39–55, 41–30, 19–49) -->
-    <line class="channel" x1="340" y1="640" x2="300" y2="780" />
-    <line class="channel" x1="330" y1="640" x2="280" y2="780" />
-    <line class="channel" x1="320" y1="640" x2="260" y2="780" />
-
-    <!-- Sacral – Root (53–42, 60–3, 52–9) -->
-    <line class="channel" x1="230" y1="760" x2="230" y2="760" />
-    <line class="channel" x1="250" y1="760" x2="250" y2="780" />
-    <line class="channel" x1="270" y1="760" x2="270" y2="780" />
-
-    <!-- Sacral – Spleen (34–57) -->
-    <line class="channel" x1="210" y1="700" x2="180" y2="620" />
-
-    <!-- Sacral – Solar Plexus (59–6) -->
-    <line class="channel" x1="290" y1="700" x2="320" y2="620" />
-
-    <!-- Sacral – Throat (20–34) -->
-    <line class="channel" x1="250" y1="660" x2="250" y2="390" />
-
-    <!-- POORTEN (enkele voorbeeld‑gates per center, klaar om uit te breiden) -->
-
-    <!-- Head gates (61, 63, 64) -->
-    <circle class="gate" cx="235" cy="145" r="9" />
-    <text class="gate-label" x="235" y="145">61</text>
-
-    <circle class="gate" cx="250" cy="145" r="9" />
-    <text class="gate-label" x="250" y="145">63</text>
-
-    <circle class="gate" cx="265" cy="145" r="9" />
-    <text class="gate-label" x="265" y="145">64</text>
-
-    <!-- Ajna gates (24, 4, 47, 11, 17, 43) -->
-    <circle class="gate" cx="230" cy="265" r="8" />
-    <text class="gate-label" x="230" y="265">24</text>
-
-    <circle class="gate" cx="250" cy="265" r="8" />
-    <text class="gate-label" x="250" y="265">4</text>
-
-    <circle class="gate" cx="270" cy="265" r="8" />
-    <text class="gate-label" x="270" y="265">47</text>
-
-    <!-- Throat gates (56, 62, 23, 31, 8, 33, 20, 16, 35, 45, 12) – hier slechts een selectie visueel -->
-    <circle class="gate" cx="210" cy="290" r="7" />
-    <text class="gate-label" x="210" y="290">56</text>
-
-    <circle class="gate" cx="230" cy="290" r="7" />
-    <text class="gate-label" x="230" y="290">
     <!-- ========================= -->
-    <!--   KANALEN (ALLE 36)      -->
+    <!--         KANALEN           -->
     <!-- ========================= -->
 
-    <!-- Head ↔ Ajna -->
+    <!-- Head ↔ Ajna (61–24, 63–4, 64–47) -->
     <line class="channel" x1="235" y1="150" x2="235" y2="170" />
     <line class="channel" x1="250" y1="150" x2="250" y2="170" />
     <line class="channel" x1="265" y1="150" x2="265" y2="170" />
 
-    <!-- Ajna ↔ Throat -->
+    <!-- Ajna ↔ Throat (11–56, 17–62, 43–23) -->
     <line class="channel" x1="230" y1="260" x2="230" y2="290" />
     <line class="channel" x1="250" y1="260" x2="250" y2="290" />
     <line class="channel" x1="270" y1="260" x2="270" y2="290" />
 
-    <!-- Throat ↔ G -->
+    <!-- Throat ↔ G (7–31, 1–8, 33–13) -->
     <line class="channel" x1="230" y1="390" x2="230" y2="420" />
     <line class="channel" x1="250" y1="390" x2="250" y2="420" />
     <line class="channel" x1="270" y1="390" x2="270" y2="420" />
 
-    <!-- G ↔ Sacral -->
+    <!-- G ↔ Sacral (2–14, 5–15, 29–46) -->
     <line class="channel" x1="240" y1="540" x2="240" y2="660" />
     <line class="channel" x1="250" y1="540" x2="250" y2="660" />
     <line class="channel" x1="260" y1="540" x2="260" y2="660" />
 
-    <!-- G ↔ Spleen -->
+    <!-- G ↔ Spleen (10–57) -->
     <line class="channel" x1="210" y1="500" x2="180" y2="560" />
 
-    <!-- G ↔ Solar Plexus -->
+    <!-- G ↔ Solar Plexus (37–40) -->
     <line class="channel" x1="290" y1="500" x2="320" y2="560" />
 
-    <!-- Ego ↔ Throat -->
+    <!-- Ego ↔ Throat (21–45) -->
     <line class="channel" x1="270" y1="580" x2="270" y2="390" />
 
-    <!-- Ego ↔ G -->
+    <!-- Ego ↔ G (51–25) -->
     <line class="channel" x1="260" y1="560" x2="260" y2="500" />
 
-    <!-- Ego ↔ Solar Plexus -->
+    <!-- Ego ↔ Solar Plexus (26–44) -->
     <line class="channel" x1="300" y1="600" x2="330" y2="580" />
 
-    <!-- Spleen ↔ Root -->
+    <!-- Spleen ↔ Root (38–28, 58–18, 48–16) -->
     <line class="channel" x1="160" y1="640" x2="200" y2="780" />
     <line class="channel" x1="170" y1="640" x2="220" y2="780" />
     <line class="channel" x1="180" y1="640" x2="240" y2="780" />
 
-    <!-- Solar Plexus ↔ Root -->
+    <!-- Solar Plexus ↔ Root (39–55, 41–30, 19–49) -->
     <line class="channel" x1="340" y1="640" x2="300" y2="780" />
     <line class="channel" x1="330" y1="640" x2="280" y2="780" />
     <line class="channel" x1="320" y1="640" x2="260" y2="780" />
 
-    <!-- Sacral ↔ Root -->
+    <!-- Sacral ↔ Root (53–42, 60–3, 52–9) -->
     <line class="channel" x1="230" y1="760" x2="230" y2="780" />
     <line class="channel" x1="250" y1="760" x2="250" y2="780" />
     <line class="channel" x1="270" y1="760" x2="270" y2="780" />
 
-    <!-- Sacral ↔ Spleen -->
+    <!-- Sacral ↔ Spleen (34–57) -->
     <line class="channel" x1="210" y1="700" x2="180" y2="620" />
 
-    <!-- Sacral ↔ Solar Plexus -->
+    <!-- Sacral ↔ Solar Plexus (59–6) -->
     <line class="channel" x1="290" y1="700" x2="320" y2="620" />
 
-    <!-- Sacral ↔ Throat -->
+    <!-- Sacral ↔ Throat (20–34) -->
     <line class="channel" x1="250" y1="660" x2="250" y2="390" />
 
-
     <!-- ========================= -->
-    <!--       POORTEN (64)       -->
+    <!--          POORTEN         -->
     <!-- ========================= -->
 
     <!-- HEAD (61, 63, 64) -->
@@ -237,7 +149,7 @@ export default function handler(req, res) {
     <circle class="gate" cx="285" cy="250" r="8" /><text class="gate-label" x="285" y="250">17</text>
     <circle class="gate" cx="250" cy="245" r="8" /><text class="gate-label" x="250" y="245">43</text>
 
-    <!-- THROAT (12 poorten) -->
+    <!-- THROAT (subset van 12 poorten) -->
     <circle class="gate" cx="210" cy="290" r="7" /><text class="gate-label" x="210" y="290">56</text>
     <circle class="gate" cx="230" cy="290" r="7" /><text class="gate-label" x="230" y="290">62</text>
     <circle class="gate" cx="250" cy="290" r="7" /><text class="gate-label" x="250" y="290">23</text>
@@ -305,3 +217,10 @@ export default function handler(req, res) {
     <circle class="gate" cx="245" cy="810" r="8" /><text class="gate-label" x="245" y="810">41</text>
     <circle class="gate" cx="275" cy="810" r="8" /><text class="gate-label" x="275" y="810">58</text>
     <circle class="gate" cx="305" cy="810" r="8" /><text class="gate-label" x="305" y="810">39</text>
+
+  </svg>
+  `;
+
+  res.setHeader("Content-Type", "image/svg+xml");
+  res.status(200).send(svg);
+}
