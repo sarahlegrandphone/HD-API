@@ -7,7 +7,7 @@
 
   <style>
     body {
-      background: #f6f2ec; /* zachte beige */
+      background: #f6f2ec;
       font-family: "Helvetica Neue", Arial, sans-serif;
       color: #333;
       padding: 40px;
@@ -17,7 +17,7 @@
 
     h1 {
       text-align: center;
-      color: #63bca1; /* jouw turquoise */
+      color: #63bca1;
       font-weight: 600;
       margin-bottom: 30px;
     }
@@ -61,7 +61,7 @@
       background: #4ea48b;
     }
 
-    #result {
+    #result, #bodygraph {
       margin-top: 40px;
       padding: 20px;
       background: white;
@@ -90,49 +90,45 @@
   </div>
 
   <div id="result"></div>
-  <div id="bodygraph" style="margin-top: 30px; display: none;">
-  <h2>Jouw Bodygraph</h2>
-  <img id="bodygraphImage" style="width: 100%; border-radius: 14px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);" />
-</div>
 
+  <div id="bodygraph">
+    <h2>Jouw Bodygraph</h2>
+    <img id="bodygraphImage" style="width: 100%; border-radius: 14px;" />
+  </div>
 
   <script>
-  <script>
-  async function calculate() {
-    const date = document.getElementById("date").value;
-    const time = document.getElementById("time").value;
-    const place = document.getElementById("place").value;
+    async function calculate() {
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+      const place = document.getElementById("place").value;
 
-    if (!date || !time || !place) {
-      alert("Vul alle velden in.");
-      return;
+      if (!date || !time || !place) {
+        alert("Vul alle velden in.");
+        return;
+      }
+
+      // JSON ophalen
+      const res = await fetch(`/api/calculate?date=${date}&time=${time}&place=${place}`);
+      const data = await res.json();
+
+      const box = document.getElementById("result");
+      box.style.display = "block";
+      box.innerHTML = `
+        <h2>Jouw chart</h2>
+        <pre>${JSON.stringify(data, null, 2)}</pre>
+      `;
+
+      // Bodygraph ophalen
+      const imgRes = await fetch(`/api/generate-image`);
+      const blob = await imgRes.blob();
+      const imgUrl = URL.createObjectURL(blob);
+
+      const imgBox = document.getElementById("bodygraph");
+      const img = document.getElementById("bodygraphImage");
+
+      img.src = imgUrl;
+      imgBox.style.display = "block";
     }
-
-    // 1. JSON ophalen
-    const res = await fetch(`/api/calculate?date=${date}&time=${time}&place=${place}`);
-    const data = await res.json();
-
-    const box = document.getElementById("result");
-    box.style.display = "block";
-    box.innerHTML = `
-      <h2>Jouw chart</h2>
-      <pre>${JSON.stringify(data, null, 2)}</pre>
-    `;
-
-    // 2. Bodygraph-afbeelding ophalen
-    const imgRes = await fetch(`/api/generate-image`);
-    const blob = await imgRes.blob();
-    const imgUrl = URL.createObjectURL(blob);
-
-    // 3. Afbeelding tonen
-    const imgBox = document.getElementById("bodygraph");
-    const img = document.getElementById("bodygraphImage");
-
-    img.src = imgUrl;
-    imgBox.style.display = "block";
-  }
-</script>
-
   </script>
 
 </body>
