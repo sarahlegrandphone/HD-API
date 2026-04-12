@@ -6,11 +6,11 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (correct) -->
+    <!-- HEAD
     <polygon class="c" points="200,40 150,120 250,120" />
 
-    <!-- AJNA (perfecte spiegel van HEAD) -->
-    <polygon class="c" points="200,200 150,140 250,140" />
+    <!-- AJNA
+    <polygon class="c" points="200,200 150,120 250,120" />
 
     <!-- THROAT (100x100, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="150" y="220" width="100" height="100" rx="6" />
