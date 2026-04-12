@@ -10,7 +10,7 @@ export default function handler(req, res) {
     <polygon class="c" points="200,40 150,120 250,120" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
-    <polygon class="c" points="200,220 150,160 250,160" />
+    <polygon class="c" points="200,220 150,140 250,160" />
 
     <!-- THROAT (100x100, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="150" y="260" width="100" height="100" rx="6" />
