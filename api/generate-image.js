@@ -13,7 +13,7 @@ export default function handler(req, res) {
     <polygon class="c" points="200,230 150,150 250,150" />
 
     <!-- THROAT (100x100, perfecte afstand, perfecte uitlijning) -->
-    <rect class="c" x="150" y="280" width="100" height="100" rx="6" />
+    <rect class="c" x="150" y="260" width="100" height="100" rx="6" />
 
     <!-- G-CENTER (nog NIET aangepast) -->
     <polygon class="c" points="200,380 140,440 200,500 260,440" />
