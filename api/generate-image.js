@@ -16,7 +16,7 @@ export default function handler(req, res) {
     <rect class="c" x="150" y="280" width="100" height="100" rx="6" />
 
     <!-- G-CENTER (nog NIET aangepast) -->
-    <polygon class="c" points="200,340 155,385 200,430 245,385" />
+    <polygon class="c" points="200,360 140,420 200,480 260,420" />
 
     <!-- EGO (nog NIET aangepast) -->
     <rect class="c" x="250" y="330" width="70" height="60" rx="6" />
