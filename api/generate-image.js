@@ -6,31 +6,31 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD -->
+    <!-- HEAD (correct) -->
     <polygon class="c" points="200,40 150,120 250,120" />
 
-    <!-- AJNA -->
-    <polygon class="c" points="200,140 150,200 250,200" />
+    <!-- AJNA (perfecte spiegel van HEAD) -->
+    <polygon class="c" points="200,200 150,140 250,140" />
 
-    <!-- THROAT -->
-    <rect class="c" x="155" y="215" width="90" height="90" rx="6" />
+    <!-- THROAT (100x100, perfecte afstand, perfecte uitlijning) -->
+    <rect class="c" x="150" y="220" width="100" height="100" rx="6" />
 
-    <!-- G-CENTER -->
+    <!-- G-CENTER (nog NIET aangepast) -->
     <polygon class="c" points="200,340 155,385 200,430 245,385" />
 
-    <!-- EGO (rechts van G) -->
+    <!-- EGO (nog NIET aangepast) -->
     <rect class="c" x="250" y="330" width="70" height="60" rx="6" />
 
-    <!-- SPLEEN (links van G) -->
+    <!-- SPLEEN (nog NIET aangepast) -->
     <polygon class="c" points="130,350 175,385 130,420 85,385" />
 
-    <!-- SACRAL -->
+    <!-- SACRAL (nog NIET aangepast) -->
     <rect class="c" x="155" y="455" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (rechts van Sacral) -->
+    <!-- SOLAR PLEXUS (nog NIET aangepast) -->
     <polygon class="c" points="270,460 315,495 270,530 225,495" />
 
-    <!-- ROOT -->
+    <!-- ROOT (nog NIET aangepast) -->
     <rect class="c" x="155" y="580" width="90" height="90" rx="6" />
   </svg>
   `.trim();
