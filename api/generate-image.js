@@ -6,54 +6,29 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (rounded) -->
-    <path class="c"
-      d="M190 10
-         Q172 50 140 90
-         Q190 110 240 90
-         Q208 50 190 10 Z" />
+    <!-- HEAD (correct) -->
+    <polygon class="c" points="190,10 140,90 240,90" />
 
-    <!-- AJNA (rounded) -->
-    <path class="c"
-      d="M190 195
-         Q172 155 140 115
-         Q190 95 240 115
-         Q208 155 190 195 Z" />
+    <!-- AJNA (perfecte spiegel van HEAD) -->
+    <polygon class="c" points="190,195 140,115 240,115" />
 
-    <!-- THROAT (rect stays with rx) -->
+    <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
 
-    <!-- G-CENTER (rounded diamond) -->
-    <path class="c"
-      d="M190 340
-         Q150 370 130 400
-         Q150 430 190 460
-         Q230 430 250 400
-         Q230 370 190 340 Z" />
+    <!-- G-CENTER -->
+    <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
-    <!-- EGO (rounded triangle) -->
-    <path class="c"
-      d="M280 420
-         Q310 435 320 470
-         Q285 465 250 460
-         Q265 435 280 420 Z" />
+    <!-- EGO -->
+    <polygon class="c" points="280,420 320,470 250,460" />
 
-    <!-- SPLEEN (rounded triangle) -->
-    <path class="c"
-      d="M30 505
-         Q70 525 110 545
-         Q70 565 30 585
-         Q20 545 30 505 Z" />
+    <!-- SPLEEN (driehoek, punt naar rechts, gecentreerd op y=545) -->
+    <polygon class="c" points="30,505 110,545 30,585" />
 
-    <!-- SACRAL -->
+    <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (rounded triangle) -->
-    <path class="c"
-      d="M260 545
-         Q300 525 340 505
-         Q300 565 340 585
-         Q300 565 260 545 Z" />
+    <!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
+    <polygon class="c" points="260,545 340,505 340,585" />
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
