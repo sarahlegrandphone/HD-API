@@ -5,12 +5,18 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD -->
-<polygon 
-  points="190,10 140,90 240,90"
+<path
+  d="
+    M190 10
+    L146 90
+    A6 6 0 0 0 152 96
+    L228 96
+    A6 6 0 0 0 234 90
+    Z
+  "
   fill="none"
   stroke="black"
-  stroke-width="3"
+  stroke-width="10"
   stroke-linejoin="round"
 />
 
