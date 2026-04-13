@@ -10,7 +10,7 @@ export default function handler(req, res) {
   points="190,10 140,90 240,90"
   fill="none"
   stroke="black"
-  stroke-width="10"
+  stroke-width="3"
   stroke-linejoin="round"
 />
 
