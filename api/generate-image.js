@@ -64,11 +64,11 @@ export default function handler(req, res) {
     <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-   <path class="c" d="
+  <path class="c" d="
   M 260 545
-  Q 310 500 340 505
-  Q 360 545 340 585
-  Q 310 590 260 545
+  Q 295 520 340 505
+  Q 350 545 340 585
+  Q 295 575 260 545
   Z" />
 
     <!-- ROOT -->
