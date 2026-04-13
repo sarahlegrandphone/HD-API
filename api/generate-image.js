@@ -22,8 +22,8 @@ export default function handler(req, res) {
 <text x="215" y="128" font-size="14" text-anchor="middle">4</text>
 
 <!-- Gates on slanted sides -->
-<text x="174" y="152" font-size="14" text-anchor="middle">17</text>
-<text x="206" y="152" font-size="14" text-anchor="middle">11</text>
+<text x="174" y="154" font-size="14" text-anchor="middle">17</text>
+<text x="206" y="154" font-size="14" text-anchor="middle">11</text>
 
 <!-- Gate in the point -->
 <text x="190" y="180" font-size="14" text-anchor="middle">43</text>
