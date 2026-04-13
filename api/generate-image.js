@@ -9,8 +9,8 @@ export default function handler(req, res) {
 <path
   id="HEAD"
   d="
-    M194 10
-    A6 6 0 0 1 206 10
+    M196 8
+    A4 4 0 0 1 204 8
 
     L248 88
     A6 6 0 0 1 242 96
@@ -22,7 +22,7 @@ export default function handler(req, res) {
   "
   fill="none"
   stroke="black"
-  stroke-width="1"
+  stroke-width="10"
   stroke-linejoin="round"
 />
 
