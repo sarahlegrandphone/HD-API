@@ -25,7 +25,7 @@ export default function handler(req, res) {
     <polygon class="c" points="130,350 175,385 130,420 85,385" />
 
     <!-- SACRAL (100x100) -->
-    <rect class="c" x="145" y="540" width="90" height="90" rx="6" />
+    <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
     <!-- SOLAR PLEXUS (nog NIET aangepast) -->
     <polygon class="c" points="270,460 315,495 270,530 225,495" />
