@@ -9,8 +9,8 @@ export default function handler(req, res) {
 <path
   id="HEAD"
   d="
-    M190 10
-    A0 1 0 0 1 210 10
+    M184 14
+    A16 16 0 0 1 216 14
 
     L248 88
     A6 6 0 0 1 242 96
