@@ -6,29 +6,54 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (correct) -->
-    <polygon class="c" points="190,10 140,90 240,90" />
+    <!-- HEAD (rounded triangle) -->
+    <path class="c" d="
+      M190 10
+      Q185 20 140 90
+      Q190 85 240 90
+      Q195 20 190 10
+      Z" />
 
-    <!-- AJNA (perfecte spiegel van HEAD) -->
-    <polygon class="c" points="190,195 140,115 240,115" />
+    <!-- AJNA (rounded triangle) -->
+    <path class="c" d="
+      M190 195
+      Q185 185 140 115
+      Q190 120 240 115
+      Q195 185 190 195
+      Z" />
 
-    <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
+    <!-- THROAT -->
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
 
-    <!-- G-CENTER -->
+    <!-- G-CENTER (diamond stays sharp) -->
     <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
-    <!-- EGO -->
-    <polygon class="c" points="280,420 320,470 250,460" />
+    <!-- EGO (rounded triangle) -->
+    <path class="c" d="
+      M280 420
+      Q300 445 320 470
+      Q285 465 250 460
+      Q270 440 280 420
+      Z" />
 
-    <!-- SPLEEN (driehoek, punt naar rechts, gecentreerd op y=545) -->
-    <polygon class="c" points="30,505 110,545 30,585" />
+    <!-- SPLEEN (rounded triangle) -->
+    <path class="c" d="
+      M30 505
+      Q40 525 110 545
+      Q40 565 30 585
+      Q25 545 30 505
+      Z" />
 
-    <!-- SACRAL (100x100) -->
+    <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
-    <polygon class="c" points="260,545 340,505 340,585" />
+    <!-- SOLAR PLEXUS (rounded triangle) -->
+    <path class="c" d="
+      M260 545
+      Q300 525 340 505
+      Q345 545 340 585
+      Q300 565 260 545
+      Z" />
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
