@@ -17,13 +17,13 @@ export default function handler(req, res) {
 <polygon class="c" points="190,195 140,115 240,115" />
 
 <!-- Gates on long side -->
-<text x="165" y="110" font-size="14" text-anchor="middle">47</text>
-<text x="190" y="110" font-size="14" text-anchor="middle">24</text>
-<text x="215" y="110" font-size="14" text-anchor="middle">4</text>
+<text x="165" y="120" font-size="14" text-anchor="middle">47</text>
+<text x="190" y="120" font-size="14" text-anchor="middle">24</text>
+<text x="215" y="120" font-size="14" text-anchor="middle">4</text>
 
 <!-- Gates on slanted sides -->
-<text x="165" y="145" font-size="14" text-anchor="middle">17</text>
-<text x="215" y="145" font-size="14" text-anchor="middle">11</text>
+<text x="160" y="140" font-size="14" text-anchor="middle">17</text>
+<text x="210" y="140" font-size="14" text-anchor="middle">11</text>
 
 <!-- Gate in the point -->
 <text x="190" y="175" font-size="14" text-anchor="middle">43</text>
