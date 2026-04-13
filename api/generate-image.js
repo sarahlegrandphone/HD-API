@@ -61,10 +61,12 @@ export default function handler(req, res) {
     <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (punt naar links, zelfde grootte als SPLEEN, 30px van Sacral) -->
+    <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
     <polygon
-      class="c"
-      points="350,505 270,545 350,585"
+      points="370,545 290,505 290,585"
+      fill="none"
+      stroke="black"
+      stroke-width="2"
       stroke-linejoin="round"
     />
 
