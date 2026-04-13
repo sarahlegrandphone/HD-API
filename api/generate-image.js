@@ -22,7 +22,7 @@ export default function handler(req, res) {
   "
   fill="none"
   stroke="black"
-  stroke-width="3"
+  stroke-width="1"
   stroke-linejoin="round"
 />
 
