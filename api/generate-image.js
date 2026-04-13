@@ -74,14 +74,13 @@ export default function handler(req, res) {
     stroke-width="2"
   />
 
-  <!-- Testdriehoek met afgeronde hoeken -->
-  <polygon
-    points="50,10 90,90 10,90"
-    fill="#2ecc71"
-    stroke="#2ecc71"
-    stroke-width="10"
-    stroke-linejoin="round"
-  />
+<polygon
+  points="50,10 90,90 10,90"
+  fill="none"
+  stroke="#2ecc71"
+  stroke-width="10"
+  stroke-linejoin="round"
+/>
 
 </svg>
     <!-- ROOT -->
