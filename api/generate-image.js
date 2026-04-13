@@ -5,22 +5,24 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
+<!-- HEAD -->
 <path
+  id="HEAD"
   d="
-    M197 10
-    A6 6 0 0 1 203 10
+    M194 10
+    A6 6 0 0 1 206 10
 
-    L236 90
-    A6 6 0 0 1 230 96
+    L250 90
+    A6 6 0 0 1 242 96
 
-    L152 96
-    A6 6 0 0 1 144 90
+    L158 96
+    A6 6 0 0 1 150 90
 
     Z
   "
   fill="none"
   stroke="black"
-  stroke-width="3"
+  stroke-width="10"
   stroke-linejoin="round"
 />
 
