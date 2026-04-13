@@ -15,7 +15,7 @@ export default function handler(req, res) {
     L245 90
     A4 4 0 0 1 239 98
 
-    L160 98
+    L150 98
     A4 4 0 0 1 155 92
 
     Z
