@@ -15,11 +15,11 @@ export default function handler(req, res) {
     <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
 
-    <!-- G-CENTER (nog NIET aangepast) -->
+    <!-- G-CENTER -->
     <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
-    <!-- EGO (nog NIET aangepast) -->
-    <rect class="c" x="250" y="330" width="70" height="60" rx="6" />
+    <!-- EGO (driehoek, naar rechts wijzend, gecentreerd rond y=420) -->
+    <polygon class="c" points="260,390 320,420 260,450" />
 
     <!-- SPLEEN (nog NIET aangepast) -->
     <polygon class="c" points="130,350 175,385 130,420 85,385" />
@@ -30,7 +30,7 @@ export default function handler(req, res) {
     <!-- SOLAR PLEXUS (nog NIET aangepast) -->
     <polygon class="c" points="270,460 315,495 270,530 225,495" />
 
-    <!-- ROOT (nog NIET aangepast) -->
+    <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
   </svg>
   `.trim();
