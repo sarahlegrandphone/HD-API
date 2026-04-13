@@ -68,7 +68,7 @@ export default function handler(req, res) {
 
 <!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
 <polygon
-  points="260,620 340,580 340,660"
+  points="260,545 340,505 340,585"
   fill="none"
   stroke="black"
   stroke-width="10"
