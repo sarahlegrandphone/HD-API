@@ -55,24 +55,21 @@ export default function handler(req, res) {
     <!-- EGO -->
     <polygon class="c" points="280,420 320,470 250,460" />
 
-    <!-- SPLEEN -->
+    <!-- SPLEEN (punt naar rechts) -->
     <polygon class="c" points="30,505 110,545 30,585" />
 
     <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
+    <!-- SOLAR PLEXUS (punt naar links, zelfde grootte als SPLEEN, 30px van Sacral) -->
     <polygon
-      points="370,545 290,505 290,585"
-      fill="none"
-      stroke="black"
-      stroke-width="2"
+      class="c"
+      points="350,505 270,545 350,585"
       stroke-linejoin="round"
     />
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
-
   </svg>
   `.trim();
 
