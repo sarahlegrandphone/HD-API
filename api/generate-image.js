@@ -55,8 +55,10 @@ export default function handler(req, res) {
     <!-- G-CENTER -->
     <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
-    <!-- EGO -->
-    <polygon class="c" points="280,420 320,470 250,460" />
+    <!-- EGO (op basis van jouw vorm) -->
+<polygon points="50,150 250,150 180,60 120,60"
+         style="fill:none;stroke:black;stroke-width:2"/>
+
 
     <!-- SPLEEN (driehoek, punt naar rechts, gecentreerd op y=545) -->
     <polygon class="c" points="30,505 110,545 30,585" />
