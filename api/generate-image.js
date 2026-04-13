@@ -75,7 +75,7 @@ export default function handler(req, res) {
     points="50,10 90,90 10,90"
     fill="none"
     stroke="black"
-    stroke-width="10"
+    stroke-width="3"
     stroke-linejoin="round"
   />
 </svg>
