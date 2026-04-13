@@ -28,7 +28,7 @@ export default function handler(req, res) {
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
     <!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
-    <polygon class="c" points="280,545 320,515 320,575" />
+    <polygon class="c" points="280,545 240,515 240,575" />
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
