@@ -64,12 +64,21 @@ export default function handler(req, res) {
     <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
+<!-- SOLAR PLEXUS (polygon met afgeronde hoeken) -->
 <polygon class="c"
-  points="260,545 340,505 340,585"
-  fill="none"
-  stroke="black"
-  stroke-width="10"
-  stroke-linejoin="round"
+  points="
+    260,545
+    270,540
+    285,530
+
+    340,505
+    335,520
+    330,540
+
+    340,585
+    325,575
+    300,560
+  "
 />
 
     <!-- ROOT -->
