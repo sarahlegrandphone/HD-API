@@ -7,17 +7,20 @@ export default function handler(req, res) {
 
 <path
   d="
-    M203 10
-    A6 6 0 0 0 197 10
-    L230 96
-    A6 6 0 0 0 230 96
-    L140 96
-    A6 6 0 0 0 140 96
+    M197 10
+    A6 6 0 0 1 203 10
+
+    L236 90
+    A6 6 0 0 1 230 96
+
+    L152 96
+    A6 6 0 0 1 144 90
+
     Z
   "
   fill="none"
   stroke="black"
-  stroke-width="2"
+  stroke-width="10"
   stroke-linejoin="round"
 />
 
