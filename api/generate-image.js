@@ -9,9 +9,9 @@ export default function handler(req, res) {
 <polygon class="c" points="190,10 140,90 240,90" />
 
 <!-- Gates on long side -->
-<text x="165" y="82" font-size="14" text-anchor="middle">64</text>
-<text x="190" y="82" font-size="14" text-anchor="middle">61</text>
-<text x="215" y="82" font-size="14" text-anchor="middle">63</text>
+<text x="165" y="83" font-size="14" text-anchor="middle">64</text>
+<text x="190" y="83" font-size="14" text-anchor="middle">61</text>
+<text x="215" y="83" font-size="14" text-anchor="middle">63</text>
 
 <!-- AJNA -->
 <polygon class="c" points="190,195 140,115 240,115" />
@@ -22,11 +22,11 @@ export default function handler(req, res) {
 <text x="215" y="128" font-size="14" text-anchor="middle">4</text>
 
 <!-- Gates on slanted sides -->
-<text x="171" y="152" font-size="14" text-anchor="middle">17</text>
-<text x="210" y="152" font-size="14" text-anchor="middle">11</text>
+<text x="172" y="152" font-size="14" text-anchor="middle">17</text>
+<text x="208" y="152" font-size="14" text-anchor="middle">11</text>
 
 <!-- Gate in the point -->
-<text x="190" y="175" font-size="14" text-anchor="middle">43</text>
+<text x="190" y="177" font-size="14" text-anchor="middle">43</text>
 
     <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
