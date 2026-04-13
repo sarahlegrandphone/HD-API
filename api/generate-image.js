@@ -13,6 +13,15 @@ export default function handler(req, res) {
 <text x="190" y="85" font-size="14" text-anchor="middle">61</text>
 <text x="215" y="85" font-size="14" text-anchor="middle">63</text>
 
+<!-- CHANNEL 64-47 -->
+<line x1="165" y1="85" x2="165" y2="128" stroke="black" stroke-width="4" />
+
+<!-- CHANNEL 61-24 -->
+<line x1="190" y1="85" x2="190" y2="128" stroke="black" stroke-width="4" />
+
+<!-- CHANNEL 63-4 -->
+<line x1="215" y1="85" x2="215" y2="128" stroke="black" stroke-width="4" />
+
 <!-- AJNA -->
 <polygon class="c" points="190,195 140,115 240,115" />
 
