@@ -10,19 +10,19 @@ export default function handler(req, res) {
   id="HEAD"
   d="
     M194 10
-    A6 6 0 0 1 206 10
+    A4 4 0 0 1 206 10
 
-    L250 90
-    A6 6 0 0 1 242 96
+    L245 90
+    A4 4 0 0 1 239 96
 
-    L158 96
-    A6 6 0 0 1 150 90
+    L161 96
+    A4 4 0 0 1 155 90
 
     Z
   "
   fill="none"
   stroke="black"
-  stroke-width="1"
+  stroke-width="10"
   stroke-linejoin="round"
 />
 
