@@ -64,14 +64,12 @@ export default function handler(req, res) {
     <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-<svg width="300" height="300" viewBox="0 0 400 600">
-
-<!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
+<!-- SOLAR PLEXUS (zelfde grootte als Spleen, rechts, punt naar links) -->
 <polygon
-  points="260,545 340,505 340,585"
+  points="370,545 290,505 290,585"
   fill="none"
   stroke="black"
-  stroke-width="10"
+  stroke-width="2"
   stroke-linejoin="round"
 />
 
