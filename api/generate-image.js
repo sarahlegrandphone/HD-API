@@ -13,21 +13,20 @@ export default function handler(req, res) {
 <text x="190" y="80" font-size="14" text-anchor="middle">61</text>
 <text x="215" y="80" font-size="14" text-anchor="middle">63</text>
 
-    <!-- AJNA -->
+<!-- AJNA -->
 <polygon class="c" points="190,195 140,115 240,115" />
 
 <!-- Gates on long side -->
-<text x="165" y="105" font-size="14" text-anchor="middle">47</text>
-<text x="190" y="105" font-size="14" text-anchor="middle">24</text>
-<text x="215" y="105" font-size="14" text-anchor="middle">4</text>
+<text x="165" y="110" font-size="14" text-anchor="middle">47</text>
+<text x="190" y="110" font-size="14" text-anchor="middle">24</text>
+<text x="215" y="110" font-size="14" text-anchor="middle">4</text>
 
 <!-- Gates on slanted sides -->
-<text x="165" y="155" font-size="14" text-anchor="middle">17</text>
-<text x="215" y="155" font-size="14" text-anchor="middle">11</text>
+<text x="165" y="145" font-size="14" text-anchor="middle">17</text>
+<text x="215" y="145" font-size="14" text-anchor="middle">11</text>
 
-<!-- Gate in the top point -->
-<text x="190" y="185" font-size="14" text-anchor="middle">43</text>
-
+<!-- Gate in the point -->
+<text x="190" y="175" font-size="14" text-anchor="middle">43</text>
 
     <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
