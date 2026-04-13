@@ -7,7 +7,7 @@ export default function handler(req, res) {
     </style>
 
     <!-- HEAD (correct) -->
-    <polygon class="c" points="190,20 140,110 240,110" />
+    <polygon class="c" points="190,20 140,100 240,100" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
     <polygon class="c" points="190,210 140,130 240,130" />
