@@ -6,14 +6,14 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (rounded like rect) -->
+    <!-- HEAD with 6px rounded corners -->
 <path class="c" d="
-  M190 10
-  L152 86
+  M190 16
+  L146 84
   A6 6 0 0 0 140 90
-  L228 90
-  A6 6 0 0 0 240 86
-  L190 10
+  L234 90
+  A6 6 0 0 0 240 84
+  L190 16
   Z" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
