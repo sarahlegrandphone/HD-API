@@ -6,8 +6,15 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (correct) -->
-    <polygon class="c" points="190,10 140,90 240,90" />
+    <!-- HEAD (rounded like rect) -->
+<path class="c" d="
+  M190 10
+  L152 86
+  A6 6 0 0 0 140 90
+  L228 90
+  A6 6 0 0 0 240 86
+  L190 10
+  Z" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
     <polygon class="c" points="190,195 140,115 240,115" />
