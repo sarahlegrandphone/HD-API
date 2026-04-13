@@ -70,6 +70,14 @@ export default function handler(req, res) {
       stroke-linejoin="round"
     />
 
+    <svg width="100" height="100" viewBox="0 0 100 100">
+  <polygon points="50,10 90,90 10,90" 
+           fill="#2ecc71" 
+           stroke="#2ecc71" 
+           stroke-width="10" 
+           stroke-linejoin="round" />
+</svg>
+
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
   </svg>
