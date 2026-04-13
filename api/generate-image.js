@@ -18,17 +18,17 @@ export default function handler(req, res) {
     <!-- G-CENTER -->
     <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
-    <!-- EGO (driehoek, naar rechts wijzend, gecentreerd rond y=420) -->
+    <!-- EGO -->
     <polygon class="c" points="280,410 320,460 250,450" />
 
-    <!-- SPLEEN (nog NIET aangepast) -->
-    <polygon class="c" points="130,350 175,385 130,420 85,385" />
+    <!-- SPLEEN (driehoek, punt naar rechts, gecentreerd op y=545) -->
+    <polygon class="c" points="120,515 160,545 120,575" />
 
     <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (nog NIET aangepast) -->
-    <polygon class="c" points="270,460 315,495 270,530 225,495" />
+    <!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
+    <polygon class="c" points="280,545 240,515 240,575" />
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
