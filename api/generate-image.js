@@ -64,12 +64,8 @@ export default function handler(req, res) {
     <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-  <path class="c" d="
-  M 260 545
-  Q 295 520 340 505
-  Q 350 545 340 585
-  Q 295 575 260 545
-  Z" />
+<!-- SOLAR PLEXUS (driehoek, punt naar links, gecentreerd op y=545) -->
+    <polygon class="c" points="260,545 340,505 340,585" />
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
