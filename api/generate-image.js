@@ -6,7 +6,7 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD with 6px rounded corners -->
+ <!-- HEAD (triangle with 6px rounded corners) -->
 <path class="c" d="
   M190 16
   L146 84
