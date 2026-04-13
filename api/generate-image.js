@@ -25,13 +25,13 @@ export default function handler(req, res) {
     <polygon class="c" points="130,350 175,385 130,420 85,385" />
 
     <!-- SACRAL (100x100) -->
-    <rect class="c" x="150" y="540" width="100" height="100" rx="6" />
+    <rect class="c" x="145" y="540" width="90" height="90" rx="6" />
 
     <!-- SOLAR PLEXUS (nog NIET aangepast) -->
     <polygon class="c" points="270,460 315,495 270,530 225,495" />
 
     <!-- ROOT (nog NIET aangepast) -->
-    <rect class="c" x="150" y="600" width="100" height="100" rx="6" />
+    <rect class="c" x="145" y="600" width="90" height="90" rx="6" />
   </svg>
   `.trim();
 
