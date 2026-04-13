@@ -19,7 +19,7 @@ export default function handler(req, res) {
     <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
     <!-- EGO -->
-    <polygon class="c" points="280,410 320,460 250,450" />
+    <polygon class="c" points="280,420 320,470 250,460" />
 
     <!-- SPLEEN (driehoek, punt naar rechts, gecentreerd op y=545) -->
     <polygon class="c" points="30,505 110,545 30,585" />
