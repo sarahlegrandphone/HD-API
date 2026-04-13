@@ -1,4 +1,3 @@
-// /api/generate-image.js
 export default function handler(req, res) {
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="700" viewBox="0 0 400 700">
@@ -6,53 +5,63 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (rounded triangle) -->
+    <!-- HEAD (rounded corners) -->
     <path class="c" d="
       M190 10
-      Q185 20 140 90
-      Q190 85 240 90
-      Q195 20 190 10
+      L152 86
+      A12 12 0 0 0 140 90
+      L228 90
+      A12 12 0 0 0 240 86
+      L190 10
       Z" />
 
-    <!-- AJNA (rounded triangle) -->
+    <!-- AJNA (rounded corners) -->
     <path class="c" d="
       M190 195
-      Q185 185 140 115
-      Q190 120 240 115
-      Q195 185 190 195
+      L152 119
+      A12 12 0 0 0 140 115
+      L228 115
+      A12 12 0 0 0 240 119
+      L190 195
       Z" />
 
     <!-- THROAT -->
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
 
-    <!-- G-CENTER (diamond stays sharp) -->
+    <!-- G-CENTER -->
     <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
-    <!-- EGO (rounded triangle) -->
+    <!-- EGO (rounded corners) -->
     <path class="c" d="
       M280 420
-      Q300 445 320 470
-      Q285 465 250 460
-      Q270 440 280 420
+      L312 462
+      A12 12 0 0 0 320 470
+      L258 462
+      A12 12 0 0 0 250 460
+      L280 420
       Z" />
 
-    <!-- SPLEEN (rounded triangle) -->
+    <!-- SPLEEN (rounded corners) -->
     <path class="c" d="
       M30 505
-      Q40 525 110 545
-      Q40 565 30 585
-      Q25 545 30 505
+      L98 541
+      A12 12 0 0 0 110 545
+      L98 549
+      A12 12 0 0 0 30 585
+      L30 505
       Z" />
 
     <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (rounded triangle) -->
+    <!-- SOLAR PLEXUS (rounded corners) -->
     <path class="c" d="
       M260 545
-      Q300 525 340 505
-      Q345 545 340 585
-      Q300 565 260 545
+      L328 509
+      A12 12 0 0 1 340 505
+      L340 585
+      A12 12 0 0 1 328 589
+      L260 545
       Z" />
 
     <!-- ROOT -->
