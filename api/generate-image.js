@@ -6,7 +6,13 @@ export default function handler(req, res) {
     </style>
 
     <!-- HEAD -->
-    <polygon class="c" points="190,10 140,90 240,90" />
+<polygon 
+  points="190,10 140,90 240,90"
+  fill="none"
+  stroke="black"
+  stroke-width="10"
+  stroke-linejoin="round"
+/>
 
     <!-- Gates on long side -->
     <text x="165" y="85" font-size="14" text-anchor="middle">64</text>
