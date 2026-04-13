@@ -10,13 +10,13 @@ export default function handler(req, res) {
     <polygon class="c" points="190,20 140,110 240,110" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
-    <polygon class="c" points="190,210 140,140 240,140" />
+    <polygon class="c" points="190,210 140,130 240,130" />
 
     <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
     <rect class="c" x="145" y="240" width="90" height="90" rx="6" />
 
     <!-- G-CENTER (nog NIET aangepast) -->
-    <polygon class="c" points="190,360 130,430 190,490 250,430" />
+    <polygon class="c" points="190,360 130,420 190,480 250,420" />
 
     <!-- EGO (nog NIET aangepast) -->
     <rect class="c" x="250" y="330" width="70" height="60" rx="6" />
