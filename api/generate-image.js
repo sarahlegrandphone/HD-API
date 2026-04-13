@@ -1,4 +1,3 @@
-// /api/generate-image.js
 export default function handler(req, res) {
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="700" viewBox="0 0 400 700">
@@ -6,15 +5,8 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-<!-- HEAD (perfect rounded triangle, 6px radius) -->
-<path class="c" d="
-  M190 16
-  L146.392 83.608
-  A6 6 0 0 0 140.392 89.608
-  L233.608 89.608
-  A6 6 0 0 0 239.608 83.608
-  L190 16
-  Z" />
+    <!-- HEAD (correct) -->
+    <polygon class="c" points="190,10 140,90 240,90" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
     <polygon class="c" points="190,195 140,115 240,115" />
