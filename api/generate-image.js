@@ -7,16 +7,16 @@ export default function handler(req, res) {
     </style>
 
     <!-- HEAD (correct) -->
-    <polygon class="c" points="190,20 140,100 240,100" />
+    <polygon class="c" points="190,10 140,90 240,90" />
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
-    <polygon class="c" points="190,205 140,125 240,125" />
+    <polygon class="c" points="190,195 140,115 240,115" />
 
     <!-- THROAT (90x90, perfecte afstand, perfecte uitlijning) -->
-    <rect class="c" x="145" y="230" width="90" height="90" rx="6" />
+    <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
 
     <!-- G-CENTER (nog NIET aangepast) -->
-    <polygon class="c" points="190,350 130,410 190,470 250,410" />
+    <polygon class="c" points="190,340 130,400 190,460 250,400" />
 
     <!-- EGO (nog NIET aangepast) -->
     <rect class="c" x="250" y="330" width="70" height="60" rx="6" />
