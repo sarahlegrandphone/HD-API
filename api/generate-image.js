@@ -22,7 +22,7 @@ export default function handler(req, res) {
     <polygon class="c" points="280,410 320,460 250,450" />
 
     <!-- SPLEEN (driehoek, punt naar rechts, gecentreerd op y=545) -->
-    <polygon class="c" points="50,505 130,545 50,585" />
+    <polygon class="c" points="30,505 110,545 30,585" />
 
     <!-- SACRAL (100x100) -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
