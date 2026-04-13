@@ -66,8 +66,9 @@ export default function handler(req, res) {
 
 <svg width="300" height="300" viewBox="0 0 400 600">
 
+<!-- SOLAR PLEXUS (driehoek, punt naar links, 30px onder Sacral) -->
 <polygon
-  points="260,545 340,505 340,585"
+  points="260,620 340,580 340,660"
   fill="none"
   stroke="#2ecc71"
   stroke-width="10"
