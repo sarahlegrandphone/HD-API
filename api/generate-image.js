@@ -66,13 +66,13 @@ export default function handler(req, res) {
 
 <svg width="300" height="300" viewBox="0 0 400 600">
 
-  <!-- Solar Plexus (originele driehoek) -->
-  <polygon class="c"
-    points="260,545 340,505 340,585"
-    fill="none"
-    stroke="black"
-    stroke-width="2"
-  />
+ <polygon
+  points="50,10 90,90 10,90"
+  fill="none"
+  stroke="#2ecc71"
+  stroke-width="2"
+  stroke-linejoin="round"
+/>
 
 <polygon
   points="50,10 90,90 10,90"
