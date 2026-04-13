@@ -5,8 +5,13 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-    <!-- HEAD (correct) -->
-    <polygon class="c" points="190,10 140,90 240,90" />
+   <!-- HEAD -->
+<polygon class="c" points="190,10 140,90 240,90" />
+
+<!-- Gates on long side -->
+<text x="165" y="80" font-size="14" text-anchor="middle">64</text>
+<text x="190" y="80" font-size="14" text-anchor="middle">61</text>
+<text x="215" y="80" font-size="14" text-anchor="middle">63</text>
 
     <!-- AJNA (perfecte spiegel van HEAD) -->
     <polygon class="c" points="190,195 140,115 240,115" />
