@@ -13,14 +13,26 @@ export default function handler(req, res) {
 <text x="190" y="85" font-size="14" text-anchor="middle">61</text>
 <text x="215" y="85" font-size="14" text-anchor="middle">63</text>
 
-<!-- CHANNEL 64-47 -->
-<line x1="165" y1="85" x2="165" y2="128" stroke="black" stroke-width="4" />
+<!-- CHANNEL 64-47 (official HD style) -->
+<line x1="163" y1="85" x2="163" y2="90" stroke="black" stroke-width="3" />
+<line x1="167" y1="85" x2="167" y2="90" stroke="black" stroke-width="3" />
+
+<line x1="163" y1="115" x2="163" y2="128" stroke="black" stroke-width="3" />
+<line x1="167" y1="115" x2="167" y2="128" stroke="black" stroke-width="3" />
 
 <!-- CHANNEL 61-24 -->
-<line x1="190" y1="85" x2="190" y2="128" stroke="black" stroke-width="4" />
+<line x1="188" y1="85" x2="188" y2="90" stroke="black" stroke-width="3" />
+<line x1="192" y1="85" x2="192" y2="90" stroke="black" stroke-width="3" />
+
+<line x1="188" y1="115" x2="188" y2="128" stroke="black" stroke-width="3" />
+<line x1="192" y1="115" x2="192" y2="128" stroke="black" stroke-width="3" />
 
 <!-- CHANNEL 63-4 -->
-<line x1="215" y1="85" x2="215" y2="128" stroke="black" stroke-width="4" />
+<line x1="213" y1="85" x2="213" y2="90" stroke="black" stroke-width="3" />
+<line x1="217" y1="85" x2="217" y2="90" stroke="black" stroke-width="3" />
+
+<line x1="213" y1="115" x2="213" y2="128" stroke="black" stroke-width="3" />
+<line x1="217" y1="115" x2="217" y2="128" stroke="black" stroke-width="3" />
 
 <!-- AJNA -->
 <polygon class="c" points="190,195 140,115 240,115" />
