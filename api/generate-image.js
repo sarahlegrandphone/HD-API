@@ -91,7 +91,13 @@ export default function handler(req, res) {
     <!-- EGO -->
     <polygon class="c" points="280,420 320,470 250,460" />
 
-    <!-- SPLEEN -->
+    <!-- SPLEEN (punt naar rechts) -->
+    <polygon class="c" points="30,505 110,545 30,585" />
+
+    <!-- SACRAL -->
+    <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
+
+    <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
     <polygon
       points="370,545 290,505 290,585"
       fill="none"
@@ -99,31 +105,6 @@ export default function handler(req, res) {
       stroke-width="2"
       stroke-linejoin="round"
     />
-
-    <!-- SACRAL -->
-    
-
-    <!-- SOLAR PLEXUS -->
- <!-- SOLAR PLEXUS (corrected position) -->
-<path
-  d="
-    M120 506
-    A8 8 0 0 1 120 494
-
-    L198 452
-    A6 6 0 0 1 206 458
-
-    L206 542
-    A6 6 0 0 1 198 548
-
-    L120 506
-    Z
-  "
-  fill="none"
-  stroke="black"
-  stroke-width="1"
-  stroke-linejoin="round"
-/>
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
