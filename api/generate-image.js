@@ -78,8 +78,14 @@ export default function handler(req, res) {
 <!-- THROAT (gecentreerd: x=145 → 155) -->
 <rect class="c" x="155" y="220" width="90" height="90" rx="6" />
 
+<line x1="197" y1="310" x2="197" y2="340" stroke="black" stroke-width="1" />
+<line x1="203" y1="310" x2="203" y2="340" stroke="black" stroke-width="1" />
+
 <!-- G-CENTER (gecentreerd rond x=200) -->
 <polygon class="c" points="200,340 140,400 200,460 260,400" />
+
+<line x1="197" y1="460" x2="197" y2="500" stroke="black" stroke-width="1" />
+<line x1="203" y1="460" x2="203" y2="500" stroke="black" stroke-width="1" />
 
 <!-- EGO (gecentreerd rond x=200) -->
 <polygon class="c" points="260,420 300,470 200,460" />
@@ -107,6 +113,9 @@ export default function handler(req, res) {
 
 <!-- SACRAL (gecentreerd: x=145 → 155) -->
 <rect class="c" x="155" y="500" width="90" height="90" rx="6" />
+
+<line x1="197" y1="590" x2="197" y2="610" stroke="black" stroke-width="1" />
+<line x1="203" y1="590" x2="203" y2="610" stroke="black" stroke-width="1" />
 
 <!-- SOLAR PLEXUS (gecentreerd: x=264 → 255) -->
 <path
