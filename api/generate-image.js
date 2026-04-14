@@ -115,19 +115,19 @@ export default function handler(req, res) {
     <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
+    <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte) -->
 <path
   d="
-    M330 546
-    A8 8 0 0 0 330 534
+    M244 534
+    A8 8 0 0 0 244 546
 
-    L252 492
-    A6 6 0 0 0 244 498
+    L322 588
+    A6 6 0 0 0 330 582
 
-    L244 582
-    A6 6 0 0 0 252 588
+    L330 498
+    A6 6 0 0 0 322 492
 
-    L330 546
+    L244 534
     Z
   "
   fill="none"
