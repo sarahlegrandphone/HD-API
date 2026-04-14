@@ -12,7 +12,7 @@ export default function handler(req, res) {
     M194 10
     A6 6 0 0 1 206 10
 
-    L212 10
+    L197 10
     L213 11
     L244 88
     A6 6 0 0 1 238 96
@@ -20,7 +20,7 @@ export default function handler(req, res) {
     L162 96
     A6 6 0 0 1 156 88
     L187 11
-    L188 10
+    L194 10
 
     Z
   "
