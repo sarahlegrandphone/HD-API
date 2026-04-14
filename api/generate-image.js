@@ -27,9 +27,9 @@ export default function handler(req, res) {
 />
 
 <!-- Gates HEAD -->
-<text x="165" y="85" font-size="14" text-anchor="middle">64</text>
-<text x="190" y="85" font-size="14" text-anchor="middle">61</text>
-<text x="215" y="85" font-size="14" text-anchor="middle">63</text>
+<text x="165" y="90" font-size="14" text-anchor="middle">64</text>
+<text x="200" y="90" font-size="14" text-anchor="middle">61</text>
+<text x="235" y="90" font-size="14" text-anchor="middle">63</text>
 
 <!-- Channels HEAD -->
 <line x1="163" y1="85" x2="163" y2="90" stroke="black" stroke-width="3" />
