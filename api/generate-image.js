@@ -5,22 +5,21 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-<!-- HEAD (perfect tangent apex with 1px directional offset) -->
+<!-- HEAD (R=6, bredere apex-boog, perfecte tangent, 1px richtinglijnen) -->
 <path
   id="HEAD"
   d="
-    M194 10
-    A6 6 0 0 1 206 10
+    M190 10
+    A6 6 0 0 1 210 10
 
-    L197 10
-    L213 11
+    L216 11
     L244 88
     A6 6 0 0 1 238 96
 
     L162 96
     A6 6 0 0 1 156 88
-    L187 11
-    L194 10
+    L184 11
+    L190 10
 
     Z
   "
