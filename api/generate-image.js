@@ -98,8 +98,6 @@ export default function handler(req, res) {
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
     <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
-    <path
-  <!-- SOLAR PLEXUS (rechts naast Sacral) -->
 <path
   d="
     M310 546
