@@ -5,13 +5,13 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-<!-- HEAD -->
+<!-- HEAD (reeds perfect gecentreerd) -->
 <path
   d="
     M194 10
     A8 8 0 0 1 206 10
 
-   L248 88
+    L248 88
     A6 6 0 0 1 242 96
 
     L158 96
@@ -26,30 +26,28 @@ export default function handler(req, res) {
   stroke-linejoin="round"
 />
 
-    <!-- Gates on long side -->
-    <text x="165" y="85" font-size="14" text-anchor="middle">64</text>
-    <text x="190" y="85" font-size="14" text-anchor="middle">61</text>
-    <text x="215" y="85" font-size="14" text-anchor="middle">63</text>
+<!-- Gates HEAD -->
+<text x="165" y="85" font-size="14" text-anchor="middle">64</text>
+<text x="190" y="85" font-size="14" text-anchor="middle">61</text>
+<text x="215" y="85" font-size="14" text-anchor="middle">63</text>
 
-    <!-- CHANNEL 64-47 -->
-    <line x1="163" y1="85" x2="163" y2="90" stroke="black" stroke-width="3" />
-    <line x1="167" y1="85" x2="167" y2="90" stroke="black" stroke-width="3" />
-    <line x1="163" y1="115" x2="163" y2="128" stroke="black" stroke-width="3" />
-    <line x1="167" y1="115" x2="167" y2="128" stroke="black" stroke-width="3" />
+<!-- Channels HEAD -->
+<line x1="163" y1="85" x2="163" y2="90" stroke="black" stroke-width="3" />
+<line x1="167" y1="85" x2="167" y2="90" stroke="black" stroke-width="3" />
+<line x1="163" y1="115" x2="163" y2="128" stroke="black" stroke-width="3" />
+<line x1="167" y1="115" x2="167" y2="128" stroke="black" stroke-width="3" />
 
-    <!-- CHANNEL 61-24 -->
-    <line x1="188" y1="85" x2="188" y2="90" stroke="black" stroke-width="3" />
-    <line x1="192" y1="85" x2="192" y2="90" stroke="black" stroke-width="3" />
-    <line x1="188" y1="115" x2="188" y2="128" stroke="black" stroke-width="3" />
-    <line x1="192" y1="115" x2="192" y2="128" stroke="black" stroke-width="3" />
+<line x1="188" y1="85" x2="188" y2="90" stroke="black" stroke-width="3" />
+<line x1="192" y1="85" x2="192" y2="90" stroke="black" stroke-width="3" />
+<line x1="188" y1="115" x2="188" y2="128" stroke="black" stroke-width="3" />
+<line x1="192" y1="115" x2="192" y2="128" stroke="black" stroke-width="3" />
 
-    <!-- CHANNEL 63-4 -->
-    <line x1="213" y1="85" x2="213" y2="90" stroke="black" stroke-width="3" />
-    <line x1="217" y1="85" x2="217" y2="90" stroke="black" stroke-width="3" />
-    <line x1="213" y1="115" x2="213" y2="128" stroke="black" stroke-width="3" />
-    <line x1="217" y1="115" x2="217" y2="128" stroke="black" stroke-width="3" />
+<line x1="213" y1="85" x2="213" y2="90" stroke="black" stroke-width="3" />
+<line x1="217" y1="85" x2="217" y2="90" stroke="black" stroke-width="3" />
+<line x1="213" y1="115" x2="213" y2="128" stroke="black" stroke-width="3" />
+<line x1="217" y1="115" x2="217" y2="128" stroke="black" stroke-width="3" />
 
-<!-- AJNA -->
+<!-- AJNA (reeds perfect gecentreerd) -->
 <path
   d="
     M194 206
@@ -70,40 +68,38 @@ export default function handler(req, res) {
   stroke-linejoin="round"
 />
 
-    <!-- Gates on long side -->
-    <text x="165" y="128" font-size="14" text-anchor="middle">47</text>
-    <text x="190" y="128" font-size="14" text-anchor="middle">24</text>
-    <text x="215" y="128" font-size="14" text-anchor="middle">4</text>
+<!-- Gates AJNA -->
+<text x="165" y="128" font-size="14" text-anchor="middle">47</text>
+<text x="190" y="128" font-size="14" text-anchor="middle">24</text>
+<text x="215" y="128" font-size="14" text-anchor="middle">4</text>
 
-    <!-- Gates on slanted sides -->
-    <text x="174" y="154" font-size="14" text-anchor="middle">17</text>
-    <text x="206" y="154" font-size="14" text-anchor="middle">11</text>
+<text x="174" y="154" font-size="14" text-anchor="middle">17</text>
+<text x="206" y="154" font-size="14" text-anchor="middle">11</text>
 
-    <!-- Gate in the point -->
-    <text x="190" y="180" font-size="14" text-anchor="middle">43</text>
+<text x="190" y="180" font-size="14" text-anchor="middle">43</text>
 
-    <!-- THROAT -->
-    <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
+<!-- THROAT (gecentreerd: x=145 → 155) -->
+<rect class="c" x="155" y="220" width="90" height="90" rx="6" />
 
-    <!-- G-CENTER -->
-    <polygon class="c" points="190,340 130,400 190,460 250,400" rx="6" />
+<!-- G-CENTER (gecentreerd rond x=200) -->
+<polygon class="c" points="200,340 140,400 200,460 260,400" />
 
-    <!-- EGO -->
-    <polygon class="c" points="280,420 320,470 250,460" />
+<!-- EGO (gecentreerd rond x=200) -->
+<polygon class="c" points="260,420 300,470 200,460" />
 
-<!-- SPLEEN (links +20px naar binnen) -->
+<!-- SPLEEN (20px naar rechts) -->
 <path
   d="
-    M110 546
-    A8 8 0 0 0 110 534
+    M130 546
+    A8 8 0 0 0 130 534
 
-    L32 492
-    A6 6 0 0 0 24 498
+    L52 492
+    A6 6 0 0 0 44 498
 
-    L24 582
-    A6 6 0 0 0 32 588
+    L44 582
+    A6 6 0 0 0 52 588
 
-    L110 546
+    L130 546
     Z
   "
   fill="none"
@@ -112,22 +108,22 @@ export default function handler(req, res) {
   stroke-linejoin="round"
 />
 
-    <!-- SACRAL -->
-    <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
+<!-- SACRAL (gecentreerd: x=145 → 155) -->
+<rect class="c" x="155" y="500" width="90" height="90" rx="6" />
 
-    <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte) -->
+<!-- SOLAR PLEXUS (gecentreerd: x=264 → 255) -->
 <path
   d="
-    M264 534
-    A8 8 0 0 0 264 546
+    M255 534
+    A8 8 0 0 0 255 546
 
-    L342 588
-    A6 6 0 0 0 350 582
+    L333 588
+    A6 6 0 0 0 341 582
 
-    L350 498
-    A6 6 0 0 0 342 492
+    L341 498
+    A6 6 0 0 0 333 492
 
-    L264 534
+    L255 534
     Z
   "
   fill="none"
@@ -136,8 +132,9 @@ export default function handler(req, res) {
   stroke-linejoin="round"
 />
 
-    <!-- ROOT -->
-    <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
+<!-- ROOT (gecentreerd: x=145 → 155) -->
+<rect class="c" x="155" y="610" width="90" height="90" rx="6" />
+
   </svg>
   `.trim();
 
