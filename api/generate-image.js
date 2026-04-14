@@ -53,8 +53,12 @@ export default function handler(req, res) {
    <path
   id="AJNA"
   d="
-    M190 195
-    L140 115
+    M140 100
+    A6 6 0 0 1 136 100 
+
+    L230 100
+    A6 6 0 0 1 224 106
+    
     L240 115
     Z
   "
