@@ -7,16 +7,16 @@ export default function handler(req, res) {
 
 <path
   d="
-    M194 10
-    A8 8 0 0 1 206 10
+    M194 20
+    A8 8 0 0 1 206 20
 
-    L238 94
-    A6 6 0 0 1 226 102
+    L232 88
+    A6 6 0 0 1 226 96
 
-    L174 102
-    A6 6 0 0 1 162 94
+    L174 96
+    A6 6 0 0 1 168 88
 
-    L194 10
+    L194 20
     Z
   "
   fill="none"
