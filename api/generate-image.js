@@ -72,6 +72,9 @@ export default function handler(req, res) {
 
 <text x="200" y="200" font-size="14" text-anchor="middle">43</text>
 
+<line x1="197" y1="206" x2="197" y2="220" stroke="black" stroke-width="1" />
+<line x1="203" y1="206" x2="203" y2="220" stroke="black" stroke-width="1" />
+
 <!-- THROAT (gecentreerd: x=145 → 155) -->
 <rect class="c" x="155" y="220" width="90" height="90" rx="6" />
 
