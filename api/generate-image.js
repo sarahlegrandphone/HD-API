@@ -27,19 +27,19 @@ export default function handler(req, res) {
 />
 
 <!-- Gates HEAD -->
-<text x="160" y="90" font-size="14" text-anchor="middle">64</text>
+<text x="170" y="90" font-size="14" text-anchor="middle">64</text>
 <text x="200" y="90" font-size="14" text-anchor="middle">61</text>
-<text x="240" y="90" font-size="14" text-anchor="middle">63</text>
+<text x="230" y="90" font-size="14" text-anchor="middle">63</text>
 
 <!-- Channels HEAD (breder gezet) -->
-<line x1="158" y1="95" x2="158" y2="125" stroke="black" stroke-width="3" />
-<line x1="162" y1="95" x2="162" y2="125" stroke="black" stroke-width="3" />
+<line x1="158" y1="96" x2="158" y2="122" stroke="black" stroke-width="1" />
+<line x1="168" y1="96" x2="168" y2="122" stroke="black" stroke-width="1" />
 
-<line x1="198" y1="95" x2="198" y2="125" stroke="black" stroke-width="3" />
-<line x1="202" y1="95" x2="202" y2="125" stroke="black" stroke-width="3" />
+<line x1="195" y1="96" x2="195" y2="122" stroke="black" stroke-width="1" />
+<line x1="205" y1="96" x2="205" y2="122" stroke="black" stroke-width="1" />
 
-<line x1="238" y1="95" x2="238" y2="125" stroke="black" stroke-width="3" />
-<line x1="242" y1="95" x2="242" y2="125" stroke="black" stroke-width="3" />
+<line x1="232" y1="96" x2="232" y2="122" stroke="black" stroke-width="1" />
+<line x1="242" y1="96" x2="242" y2="122" stroke="black" stroke-width="1" />
 
 <!-- AJNA (reeds perfect gecentreerd) -->
 <path
@@ -63,9 +63,9 @@ export default function handler(req, res) {
 />
 
 <!-- Gates AJNA -->
-<text x="160" y="132" font-size="14" text-anchor="middle">47</text>
+<text x="170" y="132" font-size="14" text-anchor="middle">47</text>
 <text x="200" y="132" font-size="14" text-anchor="middle">24</text>
-<text x="240" y="132" font-size="14" text-anchor="middle">4</text>
+<text x="230" y="132" font-size="14" text-anchor="middle">4</text>
 
 <text x="175" y="160" font-size="14" text-anchor="middle">17</text>
 <text x="225" y="160" font-size="14" text-anchor="middle">11</text>
