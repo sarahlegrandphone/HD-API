@@ -7,18 +7,18 @@ export default function handler(req, res) {
 
 <!-- HEAD (R=6, bredere boog, eindpunten niet horizontaal, directe tangentlijnen) -->
 <path
-  id="HEAD"
   d="
-    M188 10
-    A6 6 0 0 1 212 12
+    M194 22
 
-    L244 88
-    A6 6 0 0 1 238 96
+    L232 88
+    A6 6 0 0 1 226 96
 
-    L162 96
-    A6 6 0 0 1 156 88
+    L174 96
+    A6 6 0 0 1 168 88
 
-    L188 10
+    L206 22
+    A6 6 0 0 1 194 22
+
     Z
   "
   fill="none"
