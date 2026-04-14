@@ -69,14 +69,14 @@ export default function handler(req, res) {
 />
 
 <!-- Gates AJNA -->
-<text x="165" y="128" font-size="14" text-anchor="middle">47</text>
-<text x="190" y="128" font-size="14" text-anchor="middle">24</text>
-<text x="215" y="128" font-size="14" text-anchor="middle">4</text>
+<text x="165" y="132" font-size="14" text-anchor="middle">47</text>
+<text x="200" y="132" font-size="14" text-anchor="middle">24</text>
+<text x="235" y="132" font-size="14" text-anchor="middle">4</text>
 
-<text x="174" y="154" font-size="14" text-anchor="middle">17</text>
-<text x="206" y="154" font-size="14" text-anchor="middle">11</text>
+<text x="174" y="160" font-size="14" text-anchor="middle">17</text>
+<text x="215" y="160" font-size="14" text-anchor="middle">11</text>
 
-<text x="190" y="180" font-size="14" text-anchor="middle">43</text>
+<text x="200" y="200" font-size="14" text-anchor="middle">43</text>
 
 <!-- THROAT (gecentreerd: x=145 → 155) -->
 <rect class="c" x="155" y="220" width="90" height="90" rx="6" />
