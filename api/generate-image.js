@@ -92,7 +92,25 @@ export default function handler(req, res) {
     <polygon class="c" points="280,420 320,470 250,460" />
 
     <!-- SPLEEN (punt naar rechts) -->
-    <polygon class="c" points="30,505 110,545 30,585" />
+    <path
+  d="
+    M330 546
+    A8 8 0 0 0 330 534
+
+    L252 492
+    A6 6 0 0 0 244 498
+
+    L244 582
+    A6 6 0 0 0 252 588
+
+    L330 546
+    Z
+  "
+  fill="none"
+  stroke="black"
+  stroke-width="1"
+  stroke-linejoin="round"
+/>
 
     <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
