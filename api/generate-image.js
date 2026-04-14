@@ -50,7 +50,19 @@ export default function handler(req, res) {
     <line x1="217" y1="115" x2="217" y2="128" stroke="black" stroke-width="3" />
 
     <!-- AJNA -->
-    <polygon class="c" points="190,195 140,115 240,115" />
+   <path
+  id="AJNA"
+  d="
+    M190 195
+    L140 115
+    L240 115
+    Z
+  "
+  fill="none"
+  stroke="black"
+  stroke-width="1"
+  stroke-linejoin="round"
+/>
 
     <!-- Gates on long side -->
     <text x="165" y="128" font-size="14" text-anchor="middle">47</text>
