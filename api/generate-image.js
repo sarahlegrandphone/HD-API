@@ -67,7 +67,7 @@ export default function handler(req, res) {
 <text x="200" y="132" font-size="14" text-anchor="middle">24</text>
 <text x="230" y="132" font-size="14" text-anchor="middle">4</text>
 
-<text x="170" y="165" font-size="14" text-anchor="middle">17</text>
+<text x="180" y="165" font-size="14" text-anchor="middle">17</text>
 <text x="220" y="165" font-size="14" text-anchor="middle">11</text>
 
 <text x="200" y="200" font-size="14" text-anchor="middle">43</text>
