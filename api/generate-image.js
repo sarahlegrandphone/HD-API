@@ -5,12 +5,12 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
-<!-- HEAD (R=6, brede apex-boog, directe tangentlijnen) -->
+<!-- HEAD (R=6, bredere boog, eindpunten niet horizontaal, directe tangentlijnen) -->
 <path
   id="HEAD"
   d="
     M188 10
-    A6 6 0 0 1 212 10
+    A6 6 0 0 1 212 12
 
     L244 88
     A6 6 0 0 1 238 96
