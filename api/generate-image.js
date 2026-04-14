@@ -101,7 +101,7 @@ export default function handler(req, res) {
     />
 
     <!-- SACRAL -->
-    <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
+    
 
     <!-- SOLAR PLEXUS -->
     <path
