@@ -98,13 +98,25 @@ export default function handler(req, res) {
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
 
     <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
-    <polygon
-      points="370,545 290,505 290,585"
-      fill="none"
-      stroke="black"
-      stroke-width="2"
-      stroke-linejoin="round"
-    />
+    <path
+  d="
+    M120 206
+    A8 8 0 0 1 120 194
+
+    L198 152
+    A6 6 0 0 1 206 158
+
+    L206 242
+    A6 6 0 0 1 198 248
+
+    L120 206
+    Z
+  "
+  fill="none"
+  stroke="black"
+  stroke-width="1"
+  stroke-linejoin="round"
+/>
 
     <!-- ROOT -->
     <rect class="c" x="145" y="610" width="90" height="90" rx="6" />
