@@ -50,15 +50,18 @@ export default function handler(req, res) {
     <line x1="217" y1="115" x2="217" y2="128" stroke="black" stroke-width="3" />
 
     <!-- AJNA -->
-  <path
-  id="AJNA"
+<path
   d="
-    M140 115
-    L190 195
+    M194 110
+    A8 8 0 0 0 206 110
 
-    A8 8 0 0 1 200 195
+    L248 188
+    A6 6 0 0 0 242 196
 
-    L240 115
+    L158 196
+    A6 6 0 0 0 152 188
+
+    L194 110
     Z
   "
   fill="none"
