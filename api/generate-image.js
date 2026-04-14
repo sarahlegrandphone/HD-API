@@ -17,7 +17,7 @@ export default function handler(req, res) {
     L158 96
     A6 6 0 0 1 152 88
 
-    L194 20
+    L194 10
     Z
   "
   fill="none"
