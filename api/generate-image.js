@@ -5,10 +5,11 @@ export default function handler(req, res) {
       .c { fill: none; stroke: black; stroke-width: 2; }
     </style>
 
+<!-- HEAD -->
 <path
   d="
-    M194 20
-    A8 8 0 0 1 206 20
+    M194 10
+    A8 8 0 0 1 206 10
 
    L248 88
     A6 6 0 0 1 242 96
