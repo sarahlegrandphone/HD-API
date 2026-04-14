@@ -10,7 +10,7 @@ export default function handler(req, res) {
   id="HEAD"
   d="
     M194 10
-    A10 10 0 0 1 206 10
+    A2 2 0 0 1 206 10
 
     L212 10
     L244 88
