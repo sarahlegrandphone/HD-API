@@ -100,16 +100,16 @@ export default function handler(req, res) {
     <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
 <path
   d="
-    M310 546
-    A8 8 0 0 0 310 534
+    M330 546
+    A8 8 0 0 1 330 534
 
-    L232 492
-    A6 6 0 0 0 224 498
+    L252 492
+    A6 6 0 0 1 244 498
 
-    L224 582
-    A6 6 0 0 0 232 588
+    L244 582
+    A6 6 0 0 1 252 588
 
-    L310 546
+    L330 546
     Z
   "
   fill="none"
