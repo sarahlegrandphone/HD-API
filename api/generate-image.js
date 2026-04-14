@@ -32,13 +32,14 @@ export default function handler(req, res) {
 <text x="235" y="90" font-size="14" text-anchor="middle">63</text>
 
 <!-- Channels HEAD -->
-<line x1="163" y1="115" x2="163" y2="128" stroke="black" stroke-width="3" />
-<line x1="167" y1="115" x2="167" y2="128" stroke="black" stroke-width="3" />
-<line x1="188" y1="115" x2="188" y2="128" stroke="black" stroke-width="3" />
-<line x1="192" y1="115" x2="192" y2="128" stroke="black" stroke-width="3" />
+<line x1="164" y1="95" x2="164" y2="125" stroke="black" stroke-width="3" />
+<line x1="168" y1="95" x2="168" y2="125" stroke="black" stroke-width="3" />
 
-<line x1="213" y1="115" x2="213" y2="128" stroke="black" stroke-width="3" />
-<line x1="217" y1="115" x2="217" y2="128" stroke="black" stroke-width="3" />
+<line x1="198" y1="95" x2="198" y2="125" stroke="black" stroke-width="3" />
+<line x1="202" y1="95" x2="202" y2="125" stroke="black" stroke-width="3" />
+
+<line x1="233" y1="95" x2="233" y2="125" stroke="black" stroke-width="3" />
+<line x1="237" y1="95" x2="237" y2="125" stroke="black" stroke-width="3" />
 
 <!-- AJNA (reeds perfect gecentreerd) -->
 <path
