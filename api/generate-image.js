@@ -89,7 +89,7 @@ export default function handler(req, res) {
     <rect class="c" x="145" y="220" width="90" height="90" rx="6" />
 
     <!-- G-CENTER -->
-    <polygon class="c" points="190,340 130,400 190,460 250,400" />
+    <polygon class="c" points="190,340 130,400 190,460 250,400" rx="6" />
 
     <!-- EGO -->
     <polygon class="c" points="280,420 320,470 250,460" />
