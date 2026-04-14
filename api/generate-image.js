@@ -32,6 +32,8 @@ export default function handler(req, res) {
 <text x="235" y="90" font-size="14" text-anchor="middle">63</text>
 
 <!-- Channels HEAD -->
+<line x1="163" y1="115" x2="163" y2="128" stroke="black" stroke-width="3" />
+<line x1="167" y1="115" x2="167" y2="128" stroke="black" stroke-width="3" />
 <line x1="188" y1="115" x2="188" y2="128" stroke="black" stroke-width="3" />
 <line x1="192" y1="115" x2="192" y2="128" stroke="black" stroke-width="3" />
 
