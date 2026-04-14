@@ -99,17 +99,19 @@ export default function handler(req, res) {
 
     <!-- SOLAR PLEXUS (perfecte positie, perfecte grootte, punt naar links) -->
     <path
+  <!-- SOLAR PLEXUS (rechts naast Sacral) -->
+<path
   d="
-    M120 206
-    A8 8 0 0 1 120 194
+    M310 546
+    A8 8 0 0 1 310 534
 
-    L198 152
-    A6 6 0 0 1 206 158
+    L232 492
+    A6 6 0 0 1 224 498
 
-    L206 242
-    A6 6 0 0 1 198 248
+    L224 582
+    A6 6 0 0 1 232 588
 
-    L120 206
+    L310 546
     Z
   "
   fill="none"
