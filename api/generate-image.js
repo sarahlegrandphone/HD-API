@@ -91,19 +91,19 @@ export default function handler(req, res) {
     <!-- EGO -->
     <polygon class="c" points="280,420 320,470 250,460" />
 
-    <!-- SPLEEN (punt naar rechts) -->
-    <path
+    <!-- SPLEEN -->
+<path
   d="
-    M330 546
-    A8 8 0 0 0 330 534
+    M90 546
+    A8 8 0 0 0 90 534
 
-    L252 492
-    A6 6 0 0 0 244 498
+    L12 492
+    A6 6 0 0 0 4 498
 
-    L244 582
-    A6 6 0 0 0 252 588
+    L4 582
+    A6 6 0 0 0 12 588
 
-    L330 546
+    L90 546
     Z
   "
   fill="none"
@@ -111,6 +111,7 @@ export default function handler(req, res) {
   stroke-width="1"
   stroke-linejoin="round"
 />
+
 
     <!-- SACRAL -->
     <rect class="c" x="145" y="500" width="90" height="90" rx="6" />
