@@ -104,18 +104,19 @@ export default function handler(req, res) {
     
 
     <!-- SOLAR PLEXUS -->
-    <path
+ <!-- SOLAR PLEXUS (corrected position) -->
+<path
   d="
-    M120 206
-    A8 8 0 0 1 120 194
+    M120 506
+    A8 8 0 0 1 120 494
 
-    L198 152
-    A6 6 0 0 1 206 158
+    L198 452
+    A6 6 0 0 1 206 458
 
-    L206 242
-    A6 6 0 0 1 198 248
+    L206 542
+    A6 6 0 0 1 198 548
 
-    L120 206
+    L120 506
     Z
   "
   fill="none"
